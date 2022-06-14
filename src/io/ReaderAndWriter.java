@@ -7,23 +7,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReaderAndWriter {
-    File file = new File("C:\\CodeGym\\Hoc-lieu-Java\\DemoCode\\Modul-2\\Bai_Thi_thu_2\\src\\data\\products.csv");
+    File file = new File("C:\\CodeGym\\Hoc-lieu-Java\\DemoCode\\MD2_finalExam\\MD2_Test\\src\\data\\products.csv");
     public void write(List<Product> productList){
         try {
             FileWriter fileWriter = new FileWriter(file);
-            BufferedWriter bufferedWriter= new BufferedWriter(fileWriter);
-            bufferedWriter.write("ID, Name, Price, Quantity, Description");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write("id, name, price, quantity, description");
             bufferedWriter.newLine();
-            for(Product p : productList){
-                bufferedWriter.write(p.write());
+            for (Product s: productList) {
+                bufferedWriter.write(s.write());
                 bufferedWriter.newLine();
             }
             bufferedWriter.close();
             fileWriter.close();
-        } catch (IOException e) {
+        }catch (IOException e){
             e.printStackTrace();
         }
     }
+
     public List<Product> read(){
         List<Product> productList = new ArrayList<>();
         try {
@@ -35,7 +36,7 @@ public class ReaderAndWriter {
                 String[] arr = str.split(",");
                 int id = Integer.parseInt(arr[0]);
                 String name = arr[1];
-                Double price = Double.parseDouble(arr[2]);
+                int price = Integer.parseInt(arr[2]);
                 int quantity = Integer.parseInt(arr[3]);
                 String description = arr[4];
 
@@ -43,11 +44,10 @@ public class ReaderAndWriter {
             }
             bufferedReader.close();
             fileReader.close();
-
         } catch (FileNotFoundException e) {
-            System.out.println("Chưa tồn tại danh sách sản phẩm");;
-        } catch (IOException e) {
             e.printStackTrace();
+        }catch (IOException e){
+            System.err.println("File chua ton tai");
         }
         return productList;
     }

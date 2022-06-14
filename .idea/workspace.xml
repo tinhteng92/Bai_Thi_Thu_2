@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3f5aa85-faea-46d3-86d1-e68d96ecaa57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai_Thi_thu_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Feature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ProductManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SortByPriceDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SortByPriceUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ValidateProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/products.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/io/ReaderAndWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Feature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ProductManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ProductManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ValidateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ValidateProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/products.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/ReaderAndWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/ReaderAndWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +40,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/CodeGym/Hoc-lieu-Java/DemoCode/Modul-2/Case_Study"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="model" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
@@ -81,6 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654655389181</updated>
       <workItem from="1654655391001" duration="8586000" />
+      <workItem from="1655174128329" duration="5321000" />
     </task>
     <servers />
   </component>

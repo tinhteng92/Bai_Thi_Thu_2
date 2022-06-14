@@ -1,15 +1,13 @@
 package model;
 
-import java.io.Serializable;
-
-public class Product implements Serializable {
+public class Product {
     private int id;
     private String name;
-    private double price;
+    private int price;
     private int quantity;
     private String description;
 
-    public Product(int id, String name, double price, int quantity, String description) {
+    public Product(int id, String name, int price, int quantity, String description) {
         this.id = id;
         this.name = name;
         this.price = price;

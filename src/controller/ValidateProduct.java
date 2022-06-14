@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class ValidateProduct {
     public int getIndexID(int id, List<Product> productList){
+
         for (int i = 0; i < productList.size(); i++) {
             if(productList.get(i).getId() == id){
                 return i;
@@ -25,7 +26,7 @@ public class ValidateProduct {
                 }
                 return id;
             }catch (Exception e){
-                System.out.println("Nhập sai mã sản phẩm");
+                System.out.println("Mã sản phẩm đã tồn tại hoặc hãy nhập số!");
             }
         }
     }
@@ -34,17 +35,17 @@ public class ValidateProduct {
             System.out.println("Nhập " + name);
             String str = scanner.nextLine();
             if (str.equals("")){
-                System.out.println("Không được để trống");
+                System.out.println("Không được để trống!");
                 continue;
             }
             return str;
         }
     }
-    public double validatePrice(){
+    public int validatePrice(){
         while (true){
             try {
                 System.out.println("Nhập giá sản phẩm");
-                double price = Double.parseDouble(scanner.nextLine());
+                int price = Integer.parseInt(scanner.nextLine());
                 return price;
             }catch (Exception e){
                 System.out.println("Nhập vào số!");
@@ -62,5 +63,18 @@ public class ValidateProduct {
             }
         }
     }
-
+    public int validateEditID(List<Product> productList){
+        while (true){
+            try {
+                System.out.println("Nhập mã sp: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                if(getIndexID(id, productList) != -1){
+                    throw new Exception();
+                }
+                return id;
+            }catch (Exception e){
+                System.out.println("Không tìm được sản phẩm với mã sản phẩm trên.");
+            }
+        }
+    }
 }
